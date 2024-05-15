@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Timmana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/variaveis/variaveis.css">
+    <link rel="stylesheet" href="./assets/css/style/style.css">
+    <link rel="stylesheet" href="./assets/css/header/header.css">
+    <link rel="stylesheet" href="./assets/css/main/CSS-introdução/introducao.css">
+    <link rel="stylesheet" href="./assets/css/main/Seletores básicos/seletores-basicos.css">
+    <link rel="stylesheet" href="./assets/css/cores/cores.css">
+    <link rel="stylesheet" href="./assets/css/main/box-model/box-model.css">
+    <link rel="stylesheet" href="./assets/css/main/flex-grid/flex-grid.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <title>Trabalho de Front-end</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__imagem"></div>
+        <p class="cabecalho__paragrafo">CSS</p>
+        <p class="cabecalho__recado">F11 = melhor experiência</p>
+        
+    </header>
+
+    <main class="main">
+        <section class="main__CSS">
+            <div class="main__div-CSS">
+                <span class="titulo">Introducao ao CSS</span>
+
+                <p class="">O CSS é uma linguagem essencial para os desenvolvedores web, pois permite personalizar a aparência dos sites, controlando detalhes como cor, fonte e alinhamento do texto. É crucial para a criação de sites visualmente agradáveis e com consistência visual. CSS é compatível tanto no HTML quanto no XML</p>
+
+            </div>
+
+            <div class="main__imagem-CSS"></div>
+        </section>
+
+        <section class="main__seletoresBásicos">
+            <div class="seletores__div">
+                <span class="titulo">Seletores Básicos</span>
+                
+                    <p><span class="azul">Seletor por tag</span>: Este seletor seleciona o nome da tag HTML, por exemplo, input no CSS corresponderá a tag <code>&lt;input&gt;</code>.</p>
+                    
+                    <pre>
+                        <code>
+    <span class="cinza">HTML:</span>
+        <span class="azul">&lt;input&gt;</span>
+
+    <span class="cinza">CSS:</span>
+        <span class="amarelo">input {</span>
+            <span class="azul">color</span>:<span class="aqua">aqua</span>
+        <span class="amarelo">}</span>
+                        </code>
+                    </pre>
+
+                    <p><span class="azul">Seletor por classe</span>: Seleciona todos os elementos que tenha um classe. As classes são definidas em um elemento HTML e estilizadas no CSS, por exemplo:</p>
+
+                    <pre>
+                        <code>
+    <span class="cinza">HTML:</span>
+        <span class="azul">&lt;header </span><span class="azul-claro">class</span>=<span class="laranja">"cabecalho"</span>&gt;cabeçalho<span class="azul">&lt;/header&gt;
+
+
+            
+    <span class="cinza">CSS:</span>
+        <span class="amarelo">.cabecalho {</span>
+            <span class="azul">font-size</span>: <span class="verde">2em</span>
+        <span class="amarelo">}</span>
+                        </code>
+                    </pre>
+
+                    <p><span class="azul">Seletor por ID</span>: Quase a mesma coisa de seletores com classe, as únicas coisas é que um id se clara de maneira diferente, é único(só pode ser usado em um elemento, diferente de classes) e é chamado de maneira diferente no CSS:</p>
+
+                    <pre>
+                        <code>
+    <span class="cinza">HTML:</span>
+        <span class="azul">&lt;header </span><span class="azul-claro">id</span>=<span class="laranja">"cabecalho"</span>&gt;cabeçalho<span class="azul">&lt;/header&gt;
+
+    <span class="cinza">CSS:</span>
+        <span class="amarelo">#cabecalho {</span>
+            <span class="azul">font-size</span>: <span class="verde">1.75em</span>
+        <span class="amarelo">}</span>
+                        </code>
+                    </pre>
+            </div>
+        </section>
+
+        <section class="main__box-model">
+            <div class="box-model__div">
+                <span class="titulo">Box-Model</span>
+
+                <p>O Box Model é um conceito fundamental no CSS que descreve como os elementos são representados e renderizados na página.</p>
+
+                <p>No CSS, cada elemento é representado como uma caixa retangular, e essa representação é conhecida como Box Model. Cada caixa possui quatro componentes ou “camadas” que a envolvem, que são:</p>
+
+                <ul class="box-model__ul">
+                    <li class="box-model__li">Conteúdo (Content): Esta é a área onde o conteúdo real do elemento, como texto, imagens ou outros elementos, está localizado.</li>
+
+                    <li class="box-model__li">Preenchimento (Padding): É o espaço entre o conteúdo do elemento e sua borda. O preenchimento é transparente, então o fundo do elemento se estende até a borda do preenchimento.</li>
+                    
+                    <li class="box-model__li">Borda (Border): É a linha que envolve o preenchimento e o conteúdo.</li>
+
+                    <li class="box-model__li">Margem (Margin): É o espaço ao redor da borda do elemento. Serve para separar o elemento dos outros elementos ao seu redor.</li>
+                </ul>
+
+                <p>Representação gráfica:</p>
+
+                <div class="box-model__image"></div>
+
+            </div>
+        </section>
+
+        <section class="flex-grid">
+            <div class="flex-grid__div">
+                <span class="titulo">Flex-box e Grid-templates</span>
+
+                <p>Flexbox é um sistema de layout unidimensional que permite que você crie layouts mais flexíveis e eficientes em termos de espaço em relação aos modelos de layout tradicionais. Com o Flexbox, você pode alinhar, distribuir e organizar elementos em uma linha (ou coluna), o que é ideal para layouts responsivos e componentes de interface de usuário que precisam se ajustar a diferentes tamanhos de tela e dispositivos. </p>
+
+                <p>Container e Itens Flex, Eixo Principal e Cruzado, Justificação e Alinhamento são os princiapais conceitos do Flex-box</p>
+
+                <p>Flex-box pode ser aplicado a um container ou tag pai usando a classe, o id, ou a tag.</p>
+
+                <pre>
+                    <code>
+    <span class="cinza">CSS:</span>
+        <span class="amarelo">main {</span>
+            <span class="azul">display</span>: <span class="laranja">flex</span> <span class="cinza">     flex-box aplicado em main</span>
+            <span class="azul">flex-direction</span>: <span class="laranja">row</span> <span  class="cinza">   organiza os elementos em linha ou coluna
+            <span class="azul">flex-wrap</span>: <span class="laranja">wrap</span> <span class="cinza">   quebra de texto se passar do limite </span>
+        <span class="amarelo">}</span>
+                    </code>
+                </pre>
+                <br>
+                <br>
+                <br>
+
+                <span class="titulo">Grid-templates</span>
+
+                <p>Grid Layout é um sistema de layout bidimensional que permite que você crie layouts complexos e alinhados com precisão, dividindo a página em linhas e colunas. Ele fornece controle total sobre o posicionamento e o dimensionamento dos elementos da página, o que é especialmente útil para criar designs sofisticados e multidimensionais.</p>
+
+                <p>Seus principais conceitos incluem Container de Grid e Itens de Grid, Linhas e Colunas, Áreas de Grid</p>
+
+                <p>Grid é usado da seguinte maneira:</p>
+
+                <pre>
+                    <code>
+    <span class="cinza">CSS:</span>
+        <span class="amarelo">body {</span>
+            <span class="azul">display</span>: <span class="laranja">grid</span> <span class="cinza">     Grid iniciado com sucesso</span>
+            <span class="azul">grid-template-areas</span>: 
+                <span class="laranja">"header  header  header"</span>
+                <span class="laranja">"aside  main  main"</span>
+                <span class="cinza">
+                body é divido em 3 colunas e 2 linhas, com cada parte sendo 
+                ocupada pelo seu respectivo dono
+            
+        <span class="amarelo">}</span>
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <p></p>
+    </main>
+    <footer class="footer">
+        <p>Arnaldo  2ºCDS</p>
+    </footer>
+</body>
+</html>

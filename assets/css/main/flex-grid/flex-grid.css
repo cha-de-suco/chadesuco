@@ -1,0 +1,17 @@
+.flex-grid {
+    height: 175vh;
+    width: 100%;
+
+}
+
+.flex-grid__div {
+    margin-left: 400px;
+    width: 45%;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+

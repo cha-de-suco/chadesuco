@@ -1,0 +1,27 @@
+.main__box-model {
+    height: 200vh;
+    margin-top: 270px;
+    width: 100%;
+}
+
+.box-model__div {
+    margin-left: 400px;
+    width: 45%;
+}
+
+.box-model__ul {
+    list-style: none;
+
+}
+
+.box-model__li {
+    border-left: 10px   solid  royalblue;
+    margin-bottom: 40px;
+    padding-left: 15px;
+}
+
+.box-model__image {
+    background: url("../../../img/box_model.png")  no-repeat  center / cover;
+    height: 300px;
+    width: 600px;
+}

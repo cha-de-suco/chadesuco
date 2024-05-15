@@ -1,0 +1,19 @@
+.main__seletoresBásicos {
+    height: 135vh;
+    width: 100%;
+
+}
+
+.seletores__div {
+    margin-left: 400px;
+    width: 45%;
+}
+
+.seletores__ul {
+    list-style: none;
+}
+
+pre {
+    border: 1px  solid  var(--border-color);
+}
+

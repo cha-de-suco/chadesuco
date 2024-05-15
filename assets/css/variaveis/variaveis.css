@@ -1,0 +1,33 @@
+:root {
+    --font-principal: "Timmana", sans-serif;
+    --cor-de-fundo: #0d1117;
+    --cor-de-fonte: white;
+    --tamanho-titulo: 2em;
+    --border-color: #30363db3
+}
+
+.tag-exemplo-img {
+    background: url("../../../img/tag-imagem.png") no-repeat  center / cover;
+    height: 140px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 495px;
+}
+
+.seletor-classe-img {
+    background: url("../../../img/class-imagem.png")  no-repeat  center / cover ;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    width: 400px;
+}
+
+.seletor-css-img {
+    background: url("../../../img/css-class-imagem.png") no-repeat  center / cover;
+    min-height: 100px;
+    max-height: 120px;
+    margin-left: 100px;
+    width: 400px;
+}
