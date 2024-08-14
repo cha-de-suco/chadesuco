@@ -1,5 +1,5 @@
 .main__box-model {
-    height: 200vh;
+    height: 170vh;
     margin-top: 270px;
     width: 100%;
 }
@@ -24,4 +24,21 @@
     background: url("../../../img/box_model.png")  no-repeat  center / cover;
     height: 300px;
     width: 600px;
+}
+
+@media  screen and (min-width: 412px) and (max-width:430px) {
+
+    .box-model__div {
+        margin-left: 15px;
+        width: 96%;
+    }
+
+    .box-model__li {
+        padding-left: 5px;
+    }
+
+    .box-model__image {
+        height: 220px;
+        width: 370px;
+    }
 }

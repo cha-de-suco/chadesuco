@@ -17,3 +17,15 @@ pre {
     border: 1px  solid  var(--border-color);
 }
 
+@media  screen and (min-width: 412px) and (max-width:430px) {
+    .seletores__div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        width: 96%;
+    }
+
+    pre {
+        width: 96%;
+    }
+}
