@@ -28,4 +28,13 @@ body {
         height: 100vh;
         width: 100vw;
     }
+    span {
+        font-size: 15px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+
+    .footer {
+        margin-top: 320px;
+    }
 }
